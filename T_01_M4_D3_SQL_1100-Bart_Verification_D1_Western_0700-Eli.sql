@@ -6,5 +6,5 @@ SELECT sum([RRV_Handling_Fees]) As RRV_Handling_Fees
   FROM [SEIS732_Team_24_Star_Schema].[dbo].[RRV_SALES] As Sales
   INNER JOIN [SEIS732_Team_24_Star_Schema].[dbo].[DEALER] As Dealer 
   ON Sales.DLR_Key = Dealer.DLR_Key
-  	WHERE Dealer.DLR_State in ('AR','CA','NM','OR','WA')
+  	WHERE Dealer.DLR_State in ('AZ','CA','NM','OR','WA')
 	GROUP BY Dealer.DLR_State
